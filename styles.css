@@ -30,6 +30,10 @@
     flex-grow: 1;
     flex-basis: 65%; /*Tamaño horizontal*/
 
+    font-family:Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
     padding: 10px;
     margin-left: 20px;
     color: black;
@@ -160,4 +164,30 @@
 #aside a:hover{
     background: #444;
     color: #eee;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end; /*Para que empiece al final*/
+
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo{
+    order: 2;
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
 }
